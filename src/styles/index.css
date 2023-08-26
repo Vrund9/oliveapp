@@ -180,6 +180,11 @@
   overflow: hidden;
 }
 
+.button:hover {
+  background-color: #151515;
+  color: #fff;
+}
+
 /* hero div */
 .hero-container {
   width: 100%;
@@ -323,6 +328,12 @@
   position: relative;
   overflow: hidden;
   font-weight: 300;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color: #151515;
+  border: 1px solid #151515;
 }
 
 /* Contact-container */
