@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="" href="./favicon.ico" />
       </Head>
       <main className={`${manrope.variable} font-manrope bg-white main-wrapper`}>
-          <div className='gradient-noise'></div>
           <Header />
           <Component {...pageProps} />
           <Footer />
