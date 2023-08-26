@@ -35,7 +35,7 @@ const Header = () => {
               <a href="#" className='navbar-menu-item-link w-inline-block'>
                 <div className='navbar-menu-item-text'>About</div>
               </a>
-              <a href="#" className='navbar-menu-item-link w-inline-block'>
+              <a href="/blog" className='navbar-menu-item-link w-inline-block'>
                 <div className='navbar-menu-item-text'>Blog</div>
               </a>
               <a href="#" className='navbar-menu-item-link w-inline-block'>
