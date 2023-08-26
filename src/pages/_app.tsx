@@ -1,6 +1,8 @@
 import React from 'react'
 import { AppProps } from 'next/app'
 import { Manrope } from 'next/font/google'
+import store from "../redux/store";
+import { Provider } from "react-redux";
 
 import '../styles/index.css'
 import Head from 'next/head';
@@ -20,11 +22,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="" href="./favicon.ico" />
       </Head>
       <div className='gradients'></div>
-      <main className={`${manrope.variable} font-manrope bg-white main-wrapper`}>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-      </main>
+      <Provider store={store}>
+        <main className={`${manrope.variable} font-manrope bg-white main-wrapper`}>
+
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+
+        </main>
+      </Provider>
     </>
   )
 }

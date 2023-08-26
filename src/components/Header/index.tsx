@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import Button from '../Button'
+import { useSelector, useDispatch } from "react-redux";
+import { incrementByAmount } from "../../redux/counter";
+import { RootState } from "../../redux/store";
 
 const Header = () => {
+  const { count } = useSelector((state: RootState) => state.counter);
+  const dispatch = useDispatch();
   return (
     <section className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className='header-container'>
@@ -41,8 +45,8 @@ const Header = () => {
               <a href="#" className='navbar-menu-item-link w-inline-block'>
                 <div className='navbar-menu-item-text'>Pages</div>
               </a>
-              <a href="#" className='navbar-menu-item-link w-inline-block'>
-                <div className='navbar-menu-item-text'>Cart</div>
+              <a className='navbar-menu-item-link w-inline-block'>
+                <div onClick={() => dispatch(incrementByAmount(1))} className='navbar-menu-item-text'>Cart {count}</div>
               </a>
             </nav>
             <div className='navbar-right-button'>
