@@ -122,6 +122,10 @@
   font-weight: 300;
 }
 
+.navbar-menu-item-text:hover {
+  text-decoration: underline;
+}
+
 .w-inline-block {
   max-width: 100%;
 }
