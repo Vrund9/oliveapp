@@ -4,7 +4,7 @@ import Button from '../Button'
 
 const Header = () => {
   return (
-    <section className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <section className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className='header-container'>
         <div className='main-header-div'>
           <div className='header-left'>

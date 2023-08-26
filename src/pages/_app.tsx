@@ -19,10 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="" href="./favicon.ico" />
       </Head>
+      <div className='gradients'></div>
       <main className={`${manrope.variable} font-manrope bg-white main-wrapper`}>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   )
