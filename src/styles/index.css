@@ -504,6 +504,12 @@
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .right-heading {
+    font-size: 3.5rem;
+  }
+}
+
 .right-subHeading {
   width: 100%;
   max-width: 37.5rem;
@@ -515,6 +521,13 @@
   font-weight: 300;
   line-height: 160%;
 }
+
+@media screen and (max-width: 768px) {
+  .right-subHeading>div {
+    font-size: 1.4rem;
+  }
+}
+
 
 .text-meta {
   letter-spacing: 1px;
