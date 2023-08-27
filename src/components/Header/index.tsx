@@ -14,7 +14,7 @@ const Header = () => {
         <div className='main-header-div'>
           <div className='header-left'>
             <div>
-              <a>
+              <a href='/'>
                 <Image
                   src="https://assets.website-files.com/63c3f1995d4c3581bbc944b5/63c3fed42405e70f33df42ee_logo.svg"
                   width="100"

@@ -3,7 +3,7 @@ import Button from '../Button'
 
 const Hero = () => {
   return (
-    <section className="container px-5 py-24 mx-auto flex md:items-center md:py-12 md:px-8 lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <section className="container px-5 py-6 sm:py-6 mx-auto flex md:items-center md:py-12 md:px-8 lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className='hero-container'>
         <div className='hero-div'>
           <h1 className='hero-title'>Building Brands, One Success Story at a Time.</h1>

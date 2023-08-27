@@ -11,6 +11,12 @@
   line-height: 180%;
 }
 
+@media screen and (max-width: 425px) {
+  .body {
+    font-size: 2rem;
+  }
+}
+
 .gradients {
   z-index: 0;
   width: 100%;
@@ -43,15 +49,15 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1024px) {
   .main-wrapper {
-    margin: 2rem 0rem 2rem 1rem;
+    margin: 2rem 2rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .main-wrapper {
-    margin: 0rem;
+    margin: 2rem;
   }
 }
 
@@ -181,6 +187,12 @@
   display: flex;
 }
 
+@media screen and (max-width: 425px) {
+  .navbar-right-button  {
+    display: none;
+  }
+}
+
 .button {
   color: #151515;
   text-align: center;
@@ -278,7 +290,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top:110px;
+    top: 110px;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
@@ -329,6 +341,18 @@
   line-height: 110%;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+}
+
 .hero-subDiv {
   width: 100%;
   max-width: 37.5rem;
@@ -341,6 +365,14 @@
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 160%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-subTitle {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -363,6 +395,14 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .footer {
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 .margin-bottom {
@@ -491,6 +531,12 @@
   padding: 6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-box {
+    padding: 3rem;
+  }
+}
+
 .contact-box>div {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -500,6 +546,15 @@
   align-items: start;
   display: grid;
 }
+
+@media screen and (max-width: 767px) {
+  .contact-box>div {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .contact-left {
   flex-direction: column;
@@ -526,6 +581,12 @@
 @media screen and (max-width: 768px) {
   .right-heading {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .right-heading {
+    font-size: 2.25rem;
   }
 }
 
