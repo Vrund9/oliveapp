@@ -421,6 +421,12 @@
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .button-li {
+    display: none;
+  }
+}
+
 .nav-item {
   grid-column-gap: 2px;
   grid-row-gap: 2px;
@@ -443,6 +449,8 @@
   line-height: 130%;
   text-decoration: none;
 }
+
+
 
 .line {
   width: 100%;

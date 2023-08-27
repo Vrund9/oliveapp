@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Button from '../Button'
 
 const Footer = () => {
   return (
@@ -52,6 +53,9 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="nav-item-text">Contact</a>
+              </li>
+              <li className='button-li'>
+                <Button name="More Templates" />
               </li>
             </div>
           </div>
