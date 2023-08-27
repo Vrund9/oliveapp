@@ -1,14 +1,15 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { incrementByAmount } from "../../redux/counter";
 import { RootState } from "../../redux/store";
 
 const Header = () => {
   const { count } = useSelector((state: RootState) => state.counter);
+  const [show, setShow] = useState<boolean>(false)
   const dispatch = useDispatch();
   return (
-    <section className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <section className="container px-5 py-12 mx-auto flex md:items-center md:py-12 md:px-8 lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className='header-container'>
         <div className='main-header-div'>
           <div className='header-left'>
@@ -50,16 +51,49 @@ const Header = () => {
               </a>
             </nav>
             <div className='navbar-right-button'>
-              {/* <Button name="Get in Touch" /> */}
               <a className='button small w-inline-block'>
                 <div>
                   Get in Touch
                 </div>
               </a>
             </div>
+            <div className='mobile-header-toggle' onClick={() => setShow(!show)}>
+              <div className='menu line-1'></div>
+              <div className='menu line-2'></div>
+              <div className='menu line-3'></div>
+            </div>
           </div>
         </div>
         <div className="line"></div>
+      </div>
+      <div className='mobile-menu' style={{ display: `${show ? 'block' : 'none'}` }}>
+        <div>
+          <div className='mobile-menu-container'>
+            <div className="mobile-menu-nav">
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Work</div>
+              </a>
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Services</div>
+              </a>
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">About</div>
+              </a>
+              <a href="/blog" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Blog</div>
+              </a>
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Shop</div>
+              </a>
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Jobs</div>
+              </a>
+              <a href="#" className="mobile-menu-nav-link">
+                <div className="mobile-menu-nav-text">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

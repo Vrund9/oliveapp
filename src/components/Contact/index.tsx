@@ -3,7 +3,7 @@ import Button from '../Button'
 
 const Contact = () => {
   return (
-    <section className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <section className="container px-5 py-24 mx-auto flex md:items-center md:px-8 md:py-12 lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className='contact-container'>
         <div className='contact-box'>
           <div>
