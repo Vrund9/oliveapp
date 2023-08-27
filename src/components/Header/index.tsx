@@ -58,9 +58,9 @@ const Header = () => {
               </a>
             </div>
             <div className='mobile-header-toggle' onClick={() => setShow(!show)}>
-              <div className='menu line-1'></div>
-              <div className='menu line-2'></div>
-              <div className='menu line-3'></div>
+              <div className={`menu line-1 ${show ? 'line1-trans' : ''}`}></div>
+              <div className={`menu line-2 ${show ? 'line2-trans' : ''}`}></div>
+              <div className={`menu line-3 ${show ? 'line3-trans' : ''}`}></div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

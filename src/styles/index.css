@@ -252,6 +252,18 @@
   top: 0;
 }
 
+.line1-trans {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-39deg) skew(0deg, 0deg);
+}
+
+.line2-trans {
+  display: none;
+}
+
+.line3-trans {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(39deg) skew(0deg, 0deg);
+}
+
 .menu.line-2 {
   top: 50%;
 }
